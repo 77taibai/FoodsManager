@@ -1,0 +1,57 @@
+{
+	"pages": [
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "食品管理"
+			}
+		},
+		{
+			"path" : "pages/about",
+			"style": {
+				"navigationBarTitleText": "食品管理"
+			}
+		},
+		{
+			"path" : "pages/itemDetail",
+			"style": {
+				"navigationBarTitleText": "食品管理"
+			}
+		},
+		{
+			"path" : "pages/addFood",
+			"style": {
+				"navigationBarTitleText": "食品管理"
+			}
+		}
+	],
+	"globalStyle": {
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#F0AD4E",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+			"pagePath": "pages/index",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home_selected.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/addFood",
+			"iconPath": "/static/add.png",
+			"selectedIconPath": "/static/add_selected.png",
+			"text": "入库"
+		},
+		{
+			"pagePath": "pages/about",
+			"iconPath": "/static/about.png",
+			"selectedIconPath": "/static/about_selected.png",
+			"text": "关于"
+		}
+		]
+	}
+}

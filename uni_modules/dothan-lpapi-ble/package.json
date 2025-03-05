@@ -1,0 +1,97 @@
+{
+  "id": "dothan-lpapi-ble",
+  "name": "dothan-lpapi-ble",
+  "displayName": "lpapi-ble",
+  "version": "2.5.3",
+  "description": "lpapi-ble是一套基于 Canvas 绘图 + BLE打印的标签编辑及打印接口，通过生成预览图片可以达到所见即所得的打印效果。<br>本插件仅支持德佟系列标签打印机。",
+  "keywords": [
+    "dothan-lpapi-ble",
+    "lpapi-ble",
+    "lpapi",
+    "dothantech",
+    "detong"
+],
+  "repository": "https://www.npmjs.com/package/lpapi-ble-uni",
+  "engines": {
+    "HBuilderX": "^3.1.0"
+  },
+  "dcloudext": {
+    "type": "sdk-js",
+    "sale": {
+      "regular": {
+        "price": "0.00"
+      },
+      "sourcecode": {
+        "price": "0.00"
+      }
+    },
+    "contact": {
+      "qq": ""
+    },
+    "declaration": {
+      "ads": "无",
+      "data": "插件不采集任何数据",
+      "permissions": "<uses-permission android:name=\"android.permission.BLUETOOTH_CONNECT\" />\n<uses-permission android:name=\"android.permission.BLUETOOTH\"/>\n<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>\n<uses-permission android:name=\"android.permission.BLUETOOTH_SCAN\"/>\n<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>\n<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>"
+    },
+    "npmurl": "https://www.npmjs.com/package/lpapi-ble-uni"
+  },
+  "uni_modules": {
+    "dependencies": [],
+    "encrypt": [],
+    "platforms": {
+      "cloud": {
+        "tcb": "y",
+        "aliyun": "y",
+        "alipay": "n"
+      },
+      "client": {
+        "Vue": {
+          "vue2": "y",
+          "vue3": "y"
+        },
+        "App": {
+            "app-vue": "y",
+            "app-nvue": "u",
+            "app-harmony": "u",
+            "app-uvue": "u"
+        },
+        "H5-mobile": {
+          "Safari": "n",
+          "Android Browser": "n",
+          "微信浏览器(Android)": "n",
+          "QQ浏览器(Android)": "n"
+        },
+        "H5-pc": {
+          "Chrome": "n",
+          "IE": "n",
+          "Edge": "n",
+          "Firefox": "n",
+          "Safari": "n"
+        },
+        "小程序": {
+          "微信": {
+            "minVersion": "2.9.1"
+          },
+          "阿里": {
+            "minVersion": "10.1.18"
+        },
+          "百度": "n",
+          "字节跳动": "n",
+          "QQ": "n",
+          "钉钉": {
+            "minVersion": "6.0.0"
+        },
+          "快手": "n",
+          "飞书": {
+            "minVersion": "3.25"
+        },
+          "京东": "n"
+        },
+        "快应用": {
+          "华为": "n",
+          "联盟": "n"
+        }
+      }
+    }
+  }
+}
