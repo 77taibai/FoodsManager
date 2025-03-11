@@ -7,7 +7,7 @@
 	<view id="mainItemView">
 		<view class="mainItem" v-for="i in expirationInfo" :key="i.foodID" @click="removeItem(i.foodID)">
 			<text class="mainItemName">{{i.foodName}}</text>
-			<text class="mainItemInfo">过期时间：{{i.expirationTime}} （{{i.expirationDay}}）天</text>
+			<text class="mainItemInfo">过期时间：{{i.expirationTime}} （{{i.expirationDay}}天）</text>
 		</view>
 	</view>
 </template>
@@ -74,6 +74,21 @@
 				foodID: data.foodID
 			})
 		}
+
+		let temp = undefined
+		for (var index1 = 0; index1 < expirationInfo.value.length; index1++) {
+			for (var index2 = 0; index2 < expirationInfo.value.length; index2++) {
+				console.log(expirationInfo.value[index2])
+				if(parseInt(expirationInfo.value[index2].expirationDay) > parseInt(expirationInfo.value[index2 + 1].expirationDay)){
+					temp = expirationInfo.value[index2 + 1]
+					expirationInfo.value[index2 + 1] = expirationInfo.value[index2]
+					expirationInfo.value[index2] = temp
+					console.log('排序')
+				}
+			}
+		}
+		
+		
 	})
 	
 	function removeItem(foodID){

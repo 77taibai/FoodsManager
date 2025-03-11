@@ -9,7 +9,7 @@
 <style>
 	#mainView{
 		display: block;
-		margin-top: 80px;
+		margin-top: 20px;
 	}
 	
 	#mainText1{

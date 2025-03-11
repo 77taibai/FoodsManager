@@ -2,8 +2,8 @@
     "name" : "FoodsManager",
     "appid" : "__UNI__B6E7C20",
     "description" : "便捷的管理现存食品",
-    "versionName" : "1.1.0",
-    "versionCode" : 600,
+    "versionName" : "1.2.0",
+    "versionCode" : 700,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
