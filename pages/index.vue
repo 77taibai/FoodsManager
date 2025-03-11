@@ -76,14 +76,12 @@
 		}
 
 		let temp = undefined
-		for (var index1 = 0; index1 < expirationInfo.value.length; index1++) {
-			for (var index2 = 0; index2 < expirationInfo.value.length; index2++) {
-				console.log(expirationInfo.value[index2])
-				if(parseInt(expirationInfo.value[index2].expirationDay) > parseInt(expirationInfo.value[index2 + 1].expirationDay)){
+		for (var index1 = 0; index1 < expirationInfo.value.length - 1; index1++) {
+			for (var index2 = 0; index2 < expirationInfo.value.length - 1; index2++) {
+				if(parseInt(expirationInfo.value[index2].expirationDay) >= parseInt(expirationInfo.value[index2 + 1].expirationDay)){
 					temp = expirationInfo.value[index2 + 1]
 					expirationInfo.value[index2 + 1] = expirationInfo.value[index2]
 					expirationInfo.value[index2] = temp
-					console.log('排序')
 				}
 			}
 		}
